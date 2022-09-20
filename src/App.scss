@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+$primary-color:#fff;
+$dark-bg-color:#1E1E1E;
+
+
+*,body{
+    font-family: "poppins";
+    font-size:medium;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    body  {
+        background: url(./img/Mosque.png) no-repeat ;
+        background-position-y: 100% ;
+        background-color:$dark-bg-color;
+        color:$primary-color;
+        font-weight: 400;
+        background-size: contain;
+        
+        
+    }
+}
+.App{
+    height: 100vh;
+    img#asset-1 , #mosque-left, #mosque-right {
+        position: absolute;
+       
+    }
+    #asset-1{
+        right: 0;
+        top: 20%;
+    }
+    #mosque-left{
+        bottom: 0;
+        left: 0;
+        z-index: 1;
+    }
+    #mosque-right{
+        bottom: 0;
+        right: 0;
+        z-index: 1;
+    }
+    
+}
+
+header{
+    height: 100px;
+    width: 100%;
+    nav{
+        height: 60%;
+        width: 100%;
+        // border: #dfdfdf solid 1px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        padding: 0 20px ;
+        .logo{  
+            width: 60%;
+            img{
+                width: 20%;
+            }
+        }
+        .search{
+            position: relative;
+            width: 40%;
+            height: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+            align-content: center;
+            align-items: center;
+            label{
+                color: white;
+                
+            }       
+            input{
+                margin-left: 15px;
+                font-size: small;
+                height: 75%;
+                width: 100%;
+                border: 1px solid white;
+                background-color: rgba(255, 255, 255, 0);
+                color:white;
+                padding-left: 10px;
+                border-radius: 5px;
+                &::placeholder{
+                    color: #dfdfdf;
+                    padding-left: 10px;
+                }
+            }
+            span#icon-search{
+                position: absolute;
+                top: 30%;
+                right: 10px;
+                img{
+                    width: 25.02px;
+                    height: 25.02px;
+                }
+            }
+        }
+
+
+    }
+}
+main{
+    background: url(./img/Muhammad.png) no-repeat ;
+    background-size: 20%;
+    background-position-x:100% ;
+    background-position-y: 35%;
+    .card{
+        background: rgba(255, 255, 255, 0.11);
+            border: 1px white solid ;
+            border-radius: 5px;
+    }
+    .top-infos{
+        font-weight: 500;
+        font-size: larger;
+        padding: 10px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: auto;
+        width: 80%;
+        height: 130px;
+        .wrap {
+            width: 50%;
+            display: flex;
+            flex-direction: row;    
+            justify-content: center;
+            align-items: center;
+        }
+        .wrap-2{
+            width: 45%;
+        }
+    .sun {
+        width: 30%;
+        text-align: center;
+        & > img{
+            width: 60%;
+        }
+    }
+    .col{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        .location {
+            width: 50%;
+            text-align: center;
+            #loc{
+                font-size: larger;
+            }
+            img{
+                width:  6%
+            }
+        }
+        .date{
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            .currenttime{
+                font-size: larger;
+                color: #1E1E1E !important;
+            }
+            #datefr,#dateHejir{
+                font-size: larger;
+            }
+        }
+        .sunset , .sunrise {
+            width: 60%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+
+           .icon-sun{
+            width: 42px;
+           }
+           .label , .time{
+            font-size: large;
+
+           }
+        }
+    }
+
+    }
+    .nextPrayer{
+        display: flex;
+        flex-direction: column;
+        width: 35% ;
+        margin: 30px auto 40px auto;
+        padding:  10px;
+
+
+        .prayerName {
+            font-size: large;
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            padding: 0 20px;
+            justify-content: space-between;
+        }
+        .prayerTime{
+            width: 40%;
+            margin: auto;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            font-size: larger;
+            font-weight: 500;
+            img {
+                width: 30%;
+            }
+            
+        }
+    }
+
+    .prayerTimeDay{
+        z-index: 10;
+        width: 100%;
+        .title{
+            margin: 0 0 20px  100px;
+            font-size: x-large;
+            display: flex;
+            flex-direction: row;
+
+            img{
+                margin-left: 20px;
+                width: 32px;
+            }
+        }
+        .wrap{
+            width: 80%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            margin: auto;
+            .prayer{
+                background: rgba(40, 40, 40, 0.24);
+                h1{
+                    font-size: larger;
+                    font-weight: 500;
+                    
+                }
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                border-radius: 10px;
+                width: 12%;
+                height: 20vh;
+            }
+        }
+    }
+}
