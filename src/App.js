@@ -136,7 +136,7 @@ setNextPrayerTime(prayer)
           </div>
           <div className="search">
             <label htmlFor="search">Recherche</label>
-            <input type="text" id='search' defaultValue={country}  />
+            <input type="text" id='search' defaultValue={country}  placeholder="saisissez une adresse " />
             <span id="icon-search"> <img src={searchIcon} alt="" /> </span>
           
           </div>
