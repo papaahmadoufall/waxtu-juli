@@ -132,7 +132,7 @@ setNextPrayerTime(prayer)
       <header className="header">
         <nav className="navbar">
           <div className="logo">
-            <img src={logo} alt="" className={logo} />
+            <img src={logo} alt="" className={logo} /> hello
           </div>
           <div className="search">
             <label htmlFor="search">Recherche</label>
