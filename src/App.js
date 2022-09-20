@@ -2,7 +2,7 @@ import './App.scss';
 import axios from 'axios';
 import { useEffect, useState } from 'react';
 import Clock from 'react-live-clock';
-
+import { initializeApp } from "firebase/app";
 
 import logo from './img/logo.png'
 import searchIcon from './img/search.png'
@@ -30,9 +30,10 @@ const App = () => {
   const [prayerTime, setPrayerTime] = useState({});
   const [fivePrayer, setFivePrayer] = useState({});
   let sun = { "sunset": prayerTime.Sunset ," sunrise": prayerTime.Sunrise}
-  let url = "http://api.aladhan.com/v1/timingsByCity?method=3&"+"city="+city+"&country="+country ;
+  let url = "https://api.aladhan.com/v1/timingsByCity?method=3&"+"city="+city+"&country="+country ;
   let urlApi2 = "https://dailyprayer.abdulrcs.repl.co/api/"+city ;
     
+
 
   
   let date = new Date();
